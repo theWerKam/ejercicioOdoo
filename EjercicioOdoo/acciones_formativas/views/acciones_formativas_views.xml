@@ -1,0 +1,37 @@
+<odoo>
+    <record id='view_acciones_formativas_form' model='ir.ui.view'>
+        <field name='name'>acciones_formativas.acciones_formativas.form</field>
+        <field name='model'>acciones_formativas</field>
+        <field name='arch' type='xml'>
+            <form string='Acciones formativas'>
+                <group>
+                    <field name='name'/>
+                    <field name='curso_id'/>
+                    <field name='formador_id'/>
+                    <field name='participantes_id'/>
+                    <field name='horas_curso'/>
+                    <field name='sesiones'/>
+                    <field name='horas'/>
+                    <field name='sesion_horas'/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id='view_acciones_formativas_list' model='ir.ui.view'>
+        <field name='name'>acciones_formativas.acciones_formativas.list</field>
+        <field name='model'>acciones_formativas</field>
+        <field name='arch' type='xml'>
+            <list string='Acciones formativas'>
+                    <field name='name'/>
+                    <field name='curso_id'/>
+                    <field name='formador_id'/>
+                    <field name='participantes_id'/>
+                    <field name='horas_curso'/>
+                    <field name='sesiones'/>
+                    <field name='horas'/>
+                    <field name='sesion_horas'/>
+            </list>
+        </field>
+    </record>
+</odoo>

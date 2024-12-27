@@ -1,0 +1,9 @@
+<odoo>
+    <record id='action_acciones_formativas' model='ir.actions.act_window'>
+        <field name='name'>Acciones formativas</field>
+        <field name='res_model'>acciones_formativas</field>
+        <field name='view_mode'>list,form</field>
+    </record>
+
+    <menuitem id='menu_acciones_formativas_root' name='Acciones formativas' sequence='15' action='action_acciones_formativas'/>
+</odoo>
