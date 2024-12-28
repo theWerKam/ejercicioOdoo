@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_formaciones_cursos,formaciones.cursos,model_formaciones_cursos,base.group_erp_manager,1,1,1,1
+access_formaciones_especialidad,formaciones.especialidad,model_formaciones_especialidad,,1,1,1,1

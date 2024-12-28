@@ -1,0 +1,18 @@
+<odoo>
+    <record id='action_cursos' model='ir.actions.act_window'>
+        <field name='name'>Cursos</field>
+        <field name='res_model'>formaciones.cursos</field>
+        <field name='view_mode'>list,form</field>
+    </record>
+
+    <menuitem id='menu_formacion_root' name='Cursos' sequence='5' action='action_cursos' />
+
+    <record id='action_especialidades' model='ir.actions.act_window'>
+        <field name='name'>Especialidades</field>
+        <field name='res_model'>formaciones.especialidad</field>
+        <field name='view_mode'>list,form</field>
+    </record>
+
+    <menuitem id='menu_especialidad_root' name='Especialidades' action='action_especialidades'
+        sequence='10' />
+</odoo>
