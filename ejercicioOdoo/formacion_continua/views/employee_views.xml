@@ -1,0 +1,16 @@
+<odoo>
+    <record id='view_employees_formacion_form' model='ir.ui.view'>
+        <field name='name'>formacion_continua.acciones</field>
+        <field name='model'>hr.employee</field>
+        <field name='inherit_id' ref='hr.view_employee_form' />
+        <field name='arch' type='xml'>
+            <notebook position='inside'>
+                <page string="Formacion continua">
+                    <group>
+                        <field name='formacion_continua_id' widget="one2many_list"/>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

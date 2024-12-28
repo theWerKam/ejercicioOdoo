@@ -1,0 +1,67 @@
+<odoo>
+    <record id='view_acciones_formativas_form' model='ir.ui.view'>
+        <field name='name'>acciones_formativas.acciones_formativas.form</field>
+        <field name='model'>acciones_formativas</field>
+        <field name='arch' type='xml'>
+            <form string='Acciones formativas'>
+                <group>
+                    <field name='name' />
+                    <field name='curso_id' />
+                    <field name='formador_id' />
+                    <field name='participantes_id' />
+                    <field name='horas_curso' />
+                    <field name='horas_pendientes' />
+                    <field name='sesiones' />
+                    <field name='horas' />
+                    <field name='sesion_horas' />
+                    <field name='fecha_inicio' />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id='view_acciones_formativas_list' model='ir.ui.view'>
+        <field name='name'>acciones_formativas.acciones_formativas.list</field>
+        <field name='model'>acciones_formativas</field>
+        <field name='arch' type='xml'>
+            <list string='Acciones formativas'>
+                <field name='name' />
+                <field name='curso_id' />
+                <field name='formador_id' />
+                <field name='participantes_id' />
+                <field name='horas_curso' />
+                <field name='sesiones' />
+                <field name='horas' />
+                <field name='sesion_horas' />
+                <field name='fecha_inicio' />
+            </list>
+        </field>
+    </record>
+
+    <record id='view_acciones_formativas_search' model='ir.ui.view'>
+        <field name='model'>acciones_formativas</field>
+        <field name='arch' type='xml'>
+            <search>
+                <field name='name' string='Nombre'/>
+                <field name='curso_id' string='Curso'/>
+                <field name='formador_id' string ='Formador'/>
+                <field name='participantes_id' string='Participantes' />
+                <field name='horas_curso' string='Horas del curso'/>
+                <field name='sesiones' string='Numero de sesiones'/>
+                <field name='horas' string='Horas de la accion formativa'/>
+                <field name='sesion_horas' string='Horas de la sesion'/>
+                <field name='fecha_inicio' string='Fecha de inicio'/>
+            </search>
+        </field>
+    </record> 
+
+    <record id='view_acciones_formativas_calendar' model='ir.ui.view'>
+        <field name='model'>acciones_formativas</field>
+        <field name='arch' type='xml'>
+            <calendar string='Fechas inicio' date_start='fecha_inicio'>
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+</odoo>

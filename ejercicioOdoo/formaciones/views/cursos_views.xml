@@ -1,0 +1,28 @@
+<odoo>
+    <record id='view_cursos_form' model='ir.ui.view'>
+        <field name='name'>formaciones.cursos.form</field>
+        <field name='model'>formaciones.cursos</field>
+        <field name='arch' type='xml'>
+            <form string='Cursos'>
+                <group>
+                    <field name='name' />
+                    <field name='duracion' />
+                    <field name='resumen' />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id='view_cursos_list' model='ir.ui.view'>
+        <field name='name'>formaciones.cursos.list</field>
+        <field name='model'>formaciones.cursos</field>
+        <field name='arch' type='xml'>
+            <list string='Cursos'>
+                <field name='name' />
+                <field name='duracion' />
+                <field name='resumen' />
+            </list>
+        </field>
+    </record>
+
+</odoo>
