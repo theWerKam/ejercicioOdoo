@@ -1,0 +1,31 @@
+<odoo>
+    <report
+        id="reporte_empleados"
+        model="hr.employee"
+        string="Formacion continua"
+        report_type="qweb-pdf"
+        name="reporte_empleados.reporte_formacion_continua"
+        file="reporte_empleados.reporte_formacion_continua"
+    />
+
+    <template id="reporte_formacion_continua">
+        <t t-call='report.html_container'>
+            <t t-call='report.external_layout'>
+                <t t-foreach='docs' t-as='empleados'>
+                    <h1>Nombre del curso</h1>
+                    <table>
+                    <t t-set='agrupacion_por_curso' t-value='[]'/>
+                    <t t-foreach='empleados.formacion_continua_id' t-as='formacion_continua'>
+                        <t t-foreach='formacion_continua.acciones_formativas_id' t-as='acciones_formativas'>
+                            <t t-set='agrupacion_por_curso' t-value="agrupacion_por_curso + [acciones_formativas.curso_id.id]"/>
+                        </t>
+                        
+
+
+                    </t>
+                    </table>                
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

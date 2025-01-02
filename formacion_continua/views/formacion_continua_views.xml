@@ -1,0 +1,27 @@
+<odoo>
+    <record id='view_formacion_continua_form' model='ir.ui.view'>
+        <field name='name'>view_formacion_continua.form</field>
+        <field name='model'>formacion.continua</field>
+        <field name='arch' type='xml'>
+            <form string='Formacion continua'>
+                <group>
+                    <field name='acciones_formativas_id'/>
+                    <field name='trabajador_id'/>
+                    <field name='notas'/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id='view_formacion_continua_list' model='ir.ui.view'>
+        <field name='name'>view_formacion_continua.list</field>
+        <field name='model'>formacion.continua</field>
+        <field name='arch' type='xml'>
+            <list string='Formacion continua'>
+                <field name='acciones_formativas_id'/>
+                <field name='trabajador_id'/>
+                <field name='notas'/>
+            </list>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_formacion_continua,formacion_continua,model_formacion_continua,,1,1,1,1
